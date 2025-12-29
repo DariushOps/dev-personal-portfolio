@@ -40,7 +40,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 transition-all duration-500 ease-in-out ${
         isScrolled
-          ? "bg-surface backdrop-blur-xl shadow-lg rounded-b-lg py-3"
+          ? "bg-surface backdrop-blur-xl shadow-lg rounded-b-md py-3"
           : "bg-transparent py-5"
       }  z-50`}
     >
@@ -99,7 +99,7 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button>Contact Me</Button>
+            <Button onClick={() => setShowMobileMenu(false)}>Contact Me</Button>
           </div>
         </div>
       )}
