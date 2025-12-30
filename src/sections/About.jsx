@@ -66,6 +66,33 @@ export default function About() {
                 open-source contributions.
               </p>
             </div>
+            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+              <p className="text-lg font-medium italic text-foreground">
+                "My mission is to create digital experiences that are not just
+                functional, but truly delightful — products that users love to
+                use and developers love to maintain."
+              </p>
+            </div>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {highlights.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="glass rounded-2xl p-6 animate-fade-in"
+                  style={{ animationDelay: `${(idx + 1) * 100}ms` }}
+                >
+                  <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl mb-4 hover:bg-primary/25 transition-all duration-300">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg mb-2 font-semibold">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div></div>
