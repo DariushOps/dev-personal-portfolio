@@ -29,7 +29,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="py-32 overflow-hidden relative">
+    <section id="about" className="py-25 overflow-hidden relative">
       <div className="relative container mx-auto z-10 px-6">
         <div className="grid lg:grid-cols-2 items-center gap-16">
           <div className="space-y-8">
