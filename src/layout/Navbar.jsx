@@ -69,7 +69,9 @@ export default function Navbar() {
 
         {/* {cta action} */}
         <div className=" hidden sm:block">
-          <Button size="sm">Contact Me</Button>
+          <Button size="sm">
+            <a href="#contact"> Contact Me</a>
+          </Button>
         </div>
 
         {/* {mobile menu button} */}

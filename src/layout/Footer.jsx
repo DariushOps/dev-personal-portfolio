@@ -1,8 +1,12 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Instagram, Twitter } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/CoraxMuninn", label: "GitHub" },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/corvus_xaroc/",
+    label: "Instagram",
+  },
   { icon: Twitter, href: "#", label: "Twitter" },
 ];
 
@@ -23,7 +27,7 @@ export default function Footer() {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              PM<span className="text-primary">.</span>
+              CM<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               © {currentYear} Amir Muhammad Jafari. All rights reserved.
