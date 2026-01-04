@@ -96,14 +96,19 @@ export default function Hero() {
             {/* {CTAs} */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="lg">
-                <a href="#contact">
-                  Contact Me <ArrowRight className="w-5 h-5" />{" "}
+                <a
+                  href="#contact"
+                  className="flex w-full justify-center items-center"
+                >
+                  Contact Me <ArrowRight className="ml-2 w-5 h-5" />{" "}
                 </a>
               </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="resume.pdf" download>
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* {Social link} */}
@@ -116,7 +121,7 @@ export default function Hero() {
                 },
                 {
                   icon: Send,
-                  href: "#",
+                  href: "https://t.me/CoraxMuninn",
                 },
                 {
                   icon: Instagram,

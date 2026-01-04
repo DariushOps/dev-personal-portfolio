@@ -1,4 +1,4 @@
-import { Github, Instagram, Twitter } from "lucide-react";
+import { Github, Instagram, Send } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/CoraxMuninn", label: "GitHub" },
@@ -7,7 +7,7 @@ const socialLinks = [
     href: "https://www.instagram.com/corvus_xaroc/",
     label: "Instagram",
   },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Send, href: "https://t.me/CoraxMuninn", label: "Twitter" },
 ];
 
 const footerLinks = [
